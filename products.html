@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Super Style Shoes | Products</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/favicon.ico">
+        <script type="text/javascript" src="js/scrolleffects.js"></script>
+        <script type="text/javascript" src="js/modalwindow.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body onscroll="scroll();">
+        <div class="container-sm">
+            <!-- TOP SECTION -->
+            <div>
+                <nav class="navbar navbar-expand-xlg navbar-light bg-light">
+                    <a class="navbar-brand centered" href="index.html">Home</a>
+                    <a class="navbar-brand centered" href="products.html">Products</a>
+                    <a class="navbar-brand centered" href="contact.html">Contact</a>
+                    <a class="navbar-brand centered" href="references.html">References</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link centered dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Discover our partners</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.nike.com/ca/" target="_blank">Nike</a>
+                            <a class="dropdown-item" href="https://www.reebok.ca/en" target="_blank">Reebok</a>
+                            <a class="dropdown-item" href="https://www.kennethcole.com/" target="_blank">Kenneth Cole</a>
+                        </div>
+                    </div>
+                </nav>
+                <img class="w-100 spacebelow" src="images/banner.png" />
+            </div>
+            
+            <!-- PRODUCT SECTION -->
+            <div>
+                <div class="pagetitle" id="para">                
+                    <div class="tint">
+                        <div class="pagetitletext">PRODUCTS</div>
+                    </div>
+                </div>
+                
+                <div class="spaceabove spacebelow"></div>
+                
+                <div id="carouselExampleIndicators" class="carousel slide carouselsize centered" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/stilettos.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/runners.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/sneakers.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/flipflops.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/loafers.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/dressshoes.jpg">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                
+                <div class="row spacefromsides spacebelow productbox">
+                    <div class="col-sm">
+                        <img class="w-100 productimg" src="images/stilettos.jpg" />
+                    </div>
+                    <div class="col-sm">
+                        <h2>Stunning Stilettos</h2>
+                        <p class="productcode">Product Code: S1OP90</p>
+                        <h4>These stilettos are perfect for any formal occasion! With a sturdy heel and a comfortable design, these shoes are designed to make you look great and feel amazing!</h4>
+                        
+                        <div class="spaceabove"></div>
+                        
+                        <a name="button"></a>
+                        <div class="button-container" >
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="modal('Stunning Stilettos have been added to cart!');">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row spacefromsides spacebelow productbox">
+                    <div class="col-sm">
+                        <img class="w-100 productimg" src="images/runners.jpg" />
+                    </div>
+                    <div class="col-sm">
+                        <h2>Ravishing Runners</h2>
+                        <p class="productcode">Product Code: R8XY12</p>
+                        <h4>Suited for professional runners, casual joggers, speed walkers, and more! The comfortable and sturdy design of these shoes will have you race ready in no time at all!</h4>
+                        
+                        <div class="spaceabove"></div>
+                        
+                        <a name="button"></a>
+                        <div class="button-container">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="modal('Ravishing Runners have been added to cart!');">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row spacefromsides spacebelow productbox">
+                    <div class="col-sm">
+                        <img class="w-100 productimg" src="images/sneakers.jpg" />
+                    </div>
+                    <div class="col-sm">
+                        <h2>Supreme Sneakers</h2>
+                        <p class="productcode">Product Code: S5NM57</p>
+                        <h4>Our sneakers are perfect for casuals and athletes alike. Whichever way you go, these stylish shoes are sure to be for you!</h4>
+                        
+                        <div class="spaceabove"></div>
+                        
+                        <a name="button"></a>
+                        <div class="button-container">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="modal('Supreme Sneakers have been added to cart!');">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row spacefromsides spacebelow productbox">
+                    <div class="col-sm">
+                        <img class="w-100 productimg" src="images/flipflops.jpg" />
+                    </div>
+                    <div class="col-sm">
+                        <h2>Fabulous Flip-Flops</h2>
+                        <p class="productcode">Product Code: F5UJ02</p>
+                        <h4>Perfect for the beach, or just a casual stroll! These flip-flops are sure to turn heads no matter where you go with them!</h4>
+                        
+                        <div class="spaceabove"></div>
+                        
+                        <a name="button"></a>
+                        <div class="button-container">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="modal('Fabulous Flip-Flops have been added to cart!');">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row spacefromsides spacebelow productbox">
+                    <div class="col-sm">
+                        <img class="w-100 productimg" src="images/loafers.jpg" />
+                    </div>
+                    <div class="col-sm">
+                        <h2>Lavish Loafers</h2>
+                        <p class="productcode">Product Code: L3KE70</p>
+                        <h4>Our loafers slip-on like nothing, and are comfortable to wear casually or professionally! Plus, they are incredibly stylish!</h4>
+                        
+                        <div class="spaceabove"></div>
+                        
+                        <a name="button"></a>
+                        <div class="button-container">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="modal('Lavish Loafers have been added to cart!');">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row spacefromsides spacebelow productbox">
+                    <div class="col-sm">
+                        <img class="w-100 productimg" src="images/dressshoes.jpg" />
+                    </div>
+                    <div class="col-sm">
+                        <h2>Daring Dress Shoes</h2>
+                        <p class="productcode">Product Code: D2ZL36</p>
+                        <h4>For any formal event, wearing a pair of these stylish shoes is a sure-fire way to impress! Take your footwear to the next level with a pair of our dress shoes!</h4>
+                        
+                        <div class="spaceabove"></div>
+                        
+                        <a name="button"></a>
+                        <div class="button-container">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="modal('Daring Dress Shoes have been added to cart!');">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- MODAL WINDOW -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body" id="modalmsg"></div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Super Style Shoes | Contact</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/favicon.ico">
+        <script type="text/javascript" src="js/scrolleffects.js"></script>
+        <script type="text/javascript" src="js/forms.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body onscroll="scroll();">
+        <div class="container-sm">
+            <!-- TOP SECTION -->
+            <div>
+                <nav class="navbar navbar-expand-xlg navbar-light bg-light">
+                    <a class="navbar-brand centered" href="index.html">Home</a>
+                    <a class="navbar-brand centered" href="products.html">Products</a>
+                    <a class="navbar-brand centered" href="contact.html">Contact</a>
+                    <a class="navbar-brand centered" href="references.html">References</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link centered dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Discover our partners</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.nike.com/ca/" target="_blank">Nike</a>
+                            <a class="dropdown-item" href="https://www.reebok.ca/en" target="_blank">Reebok</a>
+                            <a class="dropdown-item" href="https://www.kennethcole.com/" target="_blank">Kenneth Cole</a>
+                        </div>
+                    </div>
+                </nav>
+                <img class="w-100 spacebelow" src="images/banner.png" />
+            </div>
+            
+            <!-- CONTACT SECTION -->
+            <div>
+                <div class="pagetitle spacebelow" id="para">                
+                    <div class="tint">
+                        <div class="pagetitletext">CONTACT</div>
+                    </div>
+                </div>
+                <form class="spacefromsides">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" class="textbox" onblur="nameValid();" /><br>
+                    
+                    <label for="email" class="spaceabove">Email Address</label><br>
+                    <input type="text" id="email" class="textbox" onblur="emailValid();" />
+                    
+                    <h5 class="spaceabove">Reason For Message</h5>
+                    <input type="radio" name="reason" id="general" onchange="reasonUpdate();" /><label for="general">General inquiry</label><br>
+                    <input type="radio" name="reason" id="pricing" onchange="reasonUpdate();" /><label for="general">Pricing and Bulk Rates</label><br>
+                    <input type="radio" name="reason" id="productinfo" onchange="reasonUpdate();" /><label for="general">Product Info</label><br>
+                    <input type="radio" name="reason" id="shipping" onchange="reasonUpdate();" /><label for="general">Shipping</label><br>
+                    <input type="radio" name="reason" id="other" onchange="reasonUpdate();" /><label for="general">Other</label><br>
+                    
+                    <label for="productid" class="hidden spaceabove" id="productIDLabel">Product ID</label>
+                    <input type="text" id="productid" class="textbox hidden" onblur="productIDValid();"/>
+                    
+                    <label for="message" class="spaceabove">Message</label><br>
+                    <textarea id="message"  onblur="messageValid();"></textarea><br>
+                    
+                    <button id="submit" class="spaceabove spacebelow">Submit</button>
+                </form>
+                
+            </div>
+        </div>
+    </body>
+</html>
